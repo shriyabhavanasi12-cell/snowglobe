@@ -58,3 +58,18 @@ main{
 .scene{
     width:78%;
 }
+
+.button{
+    font:inherit;
+    color:#ffffff;
+    background:#df5034;
+    border:none;
+    padding:0.75rem 1.5rem;
+    cursor:pointer;
+    transition:background 150ms ease,transform 150ms ease;
+}
+
+button:hover{
+    background:#a43835;
+    transform: scale(1.05);
+}
