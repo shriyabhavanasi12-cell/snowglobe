@@ -73,3 +73,15 @@ button:hover{
     background:#a43835;
     transform: scale(1.05);
 }
+
+@keyframes shake{
+ 0%, 100% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-0.6rem) rotate(-4deg); }
+  40% { transform: translateX(0.6rem) rotate(4deg); }
+  60% { transform: translateX(-0.4rem) rotate(-2deg); }
+  80% { transform: translateX(0.4rem) rotate(2deg); }
+}
+
+.globe.shaking{
+    animation:shake 600ms ease;
+}
