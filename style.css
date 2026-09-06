@@ -15,7 +15,14 @@ h1{
 }
 
 .hero{
-    
+    padding:3rem 1rem 1rem;
+    text-align:center;
+}
+
+main{
+    max-width:32rem;
+    margin:0 auto;
+    padding:0 1rem 4rem;
 }
 
 
@@ -23,10 +30,31 @@ h1{
     background:#fdf7e8;
 
     border:2px solid #235fd4;
+    padding :2rem;
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1.25rem;
 
 }
 
 #message{
     font-style:italic;
     
+}
+
+.globe{
+    width:12rem;
+    height:12rem;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 25%,#ffffff, #cfe6ff,65% ,#9dc4ef);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+
+}
+.scene{
+    width:78%;
 }
