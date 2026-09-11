@@ -93,29 +93,31 @@ body{
 
 }
 
-#snow-container{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    overflow:hidden;
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
 }
 
-.snowflake{
-    position:absolute;
-    top:-20px;
-    color:white;
-    font-size:1rem;
-    animation:fall linear infinite; 
+.snowflake {
+    position: fixed;
+    top: -30px;
+    color: white;
+    font-size: 24px;
+    z-index: 9999;
+    animation: fall 5s linear infinite;
 }
 
-@keyframes fall{
-    from{
-        transform:translateY(-50px);
+@keyframes fall {
+    from {
+        top: -30px;
     }
-    to{
-        transform:translateY(calc(100vh+50px));
+
+    to {
+        top: 100vh;
     }
 }
